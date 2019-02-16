@@ -1,0 +1,21 @@
+{
+  "name": "@kipln/asoriba",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha '{,!(node_modules)/**/}*.test.js' --color --no-timeouts"
+  },
+  "author": "Nayram<nayrammesah@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "got": "9.6.0",
+    "urlsearchparams": "0.1.1"
+  },
+  "devDependencies": {
+    "chai": "4.2.0",
+    "mocha": "5.2.0",
+    "chai-as-promised": "7.1.1",
+    "nock": "10.0.6"
+  }
+}

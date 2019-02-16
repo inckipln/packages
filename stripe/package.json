@@ -1,0 +1,21 @@
+{
+  "name": "stripe_payment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha '{,!(node_modules)/**/}*.test.js' --color --no-timeouts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "stripe": "6.23.1"
+  },
+  "devDependencies": {
+    "express": "4.16.4",
+    "chai": "4.2.0",
+    "mocha": "5.2.0",
+    "body-parser": "1.18.3",
+    "pug": "2.0.3"
+  }
+}
