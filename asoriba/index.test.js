@@ -14,7 +14,7 @@ describe("Asoriba Payment", ()=>{
 
     describe("Success", () => {
 
-        const AUTH_TOKEN="K_iTUWzcQqUXGH9ZbDxIg1NhLZCZ0VrUdw___FAPK5jXkG1B1SaN-qrnwKvI"
+        const AUTH_TOKEN="sdadadafdf"
         
         const options = {
             amount:1.0,
@@ -25,7 +25,7 @@ describe("Asoriba Payment", ()=>{
             },
             callback:"https:localhost/",
             post_url:"https://webhook.site/a12caedb-a3b3-46e6-b5d8-8f784da17a33",
-            pub_key:"fIJEQUisXb2J-Fa5vZbuS5PNtUqJE4z8X-rov-BEF_JKu7braDb06nNHErQQ",
+            pub_key:"dsfadfadfaffsdfd",
             order_image_url:"https://payment.asoriba.com/assets/asoribalogo-3d4540003815aee230ca676138579ed495cfa975270fe2d7e656292c4508d472.png",
             first_name:"John",
             last_name:"Doe",

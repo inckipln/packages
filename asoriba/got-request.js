@@ -28,13 +28,14 @@ const verify = (token) => {
             baseUrl: BASE_URL,
             header: {
                 "Content-Type": "application/json",
-                "Authorization": `Bearer ${token}`
+                "Authorization": token
             }
         })
-        
-        const query = new URLSearchParams([['transaction_uuid', param]]);
 
-        return client.get("verify",{query})
+        console.log(client.defaults.options.headers);
+        
+
+        return client.get(`verify?transaction_uuid=${param}`)
     }
 }
 

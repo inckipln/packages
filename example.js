@@ -1,6 +1,6 @@
 "use strict"
 
-const payment = require ('./index')
+const payment = require ('./asoriba')
 
 const AUTH_TOKEN = "K_iTUWzcQqUXGH9ZbDxIg1NhLZCZ0VrUdw___FAPK5jXkG1B1SaN-qrnwKvI"
 
