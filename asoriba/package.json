@@ -1,6 +1,6 @@
 {
-  "name": "asoriba-payament",
-  "version": "1.0.0",
+  "name": "asoriba-payment",
+  "version": "1.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
