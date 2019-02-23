@@ -1,16 +1,15 @@
 {
-  "name": "@kipln/asoriba",
+  "name": "asoriba-payament",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "mocha '{,!(node_modules)/**/}*.test.js' --color --no-timeouts"
   },
-  "author": "Nayram<nayrammesah@gmail.com>",
+  "author": "Nayram<nayrammensah@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "got": "9.6.0",
-    "urlsearchparams": "0.1.1"
+    "got": "9.6.0"
   },
   "devDependencies": {
     "chai": "4.2.0",

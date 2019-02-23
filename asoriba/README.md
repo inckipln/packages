@@ -4,14 +4,14 @@ This is a node wrapper of the asoriba payment platform. It allows for initializi
 
 # Installation
 
-`npm i @kipln/asoriba`
+`npm i asoriba-payament`
 
 # Run
 
 ### Initialize Payment / Checkout 
 
 ``` javascript
-const payment = require ('./asoriba')
+const payment = require ('asoriba-payament')
 
 const AUTH_TOKEN = "dsdfsdfsdfdfsfsf"
 
