@@ -43,10 +43,7 @@ const paymentDetails = {
 }
 
 
-payment({
-            AUTH_TOKEN,
-            BASE_URL
-        }).checkout(
+payment({ AUTH_TOKEN, BASE_URL }).checkout(
     paymentDetails
 ).then(data => console.log(data)).catch(err => console.log(err))
 
