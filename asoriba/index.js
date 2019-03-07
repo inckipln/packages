@@ -3,11 +3,17 @@
 const {initialize}=require('./got-request.js')
 const pipe = require('./lib/pipe')
 
+const getResponseBody = res => res.body
+
+const throwError = err => {throw err.body}
+
+
 const payment = (token) => {
     return Object.create({
-        init: pipe(
-            initialize(token)
-        )
+        checkout: (options) =>pipe(
+            initialize(token),
+            getResponseBody
+        )(options).catch(throwError)
     })
 }
 
