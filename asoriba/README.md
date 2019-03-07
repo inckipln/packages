@@ -33,9 +33,9 @@ const options = {
 }
 
 
-payment(AUTH_TOKEN).init(
+payment(AUTH_TOKEN).checkout(
     options
-).then(data => console.log(data.body)).catch(err => console.log(err.body))
+).then(data => console.log(data)).catch(err => console.log(err))
 
 `Result`
 
