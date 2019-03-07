@@ -6,16 +6,26 @@ This is a node wrapper of the asoriba payment platform. It allows for initializi
 
 `npm i asoriba-payment`
 
-# Run
 
+
+# Payment Fields
+
+|  FIELD  |  DESCRIPTION | REQUIRED | DATA TYPE |
+| --------   |    -------------------- | ---------        |    ------------    |
+| AUTH_TOKEN     |   Authentication token required to make a succesful call to the asoriba api |  true        |  string |
+| BASE_URL     |  Base url for the http asoriba api. It could be that of the live api or the stage api  |  true        |  string  |
+| PAYMENT DETAILS      |  Contains the details of the payment or order  |  true        |  object  |
+
+# Run
 ### Initialize Payment / Checkout 
 
 ``` javascript
 const payment = require ('asoriba-payment')
 
 const AUTH_TOKEN = "dsdfsdfsdfdfsfsf"
+const BASE_URL = "https://paymentsandbox.asoriba.com"
 
-const options = {
+const paymentDetails = {
     amount:1.0,
     metadata: {
         order_id:9800,
@@ -33,8 +43,11 @@ const options = {
 }
 
 
-payment(AUTH_TOKEN).checkout(
-    options
+payment({
+            AUTH_TOKEN,
+            BASE_URL
+        }).checkout(
+    paymentDetails
 ).then(data => console.log(data)).catch(err => console.log(err))
 
 `Result`

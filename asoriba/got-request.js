@@ -2,18 +2,16 @@
 
 const got = require('got')
 
-const BASE_URL = "https://paymentsandbox.asoriba.com/payment/v1.0/"
 
-const initialize = (token) => {
+const initialize = ({AUTH_TOKEN, BASE_URL}) => {
     
     return (data) => {
-
         const client = got.extend({
-            baseUrl: BASE_URL,
+            baseUrl: `${BASE_URL}/payment/v1.0/`,
             json:true,
             header: {
                 "Content-Type": "application/json",
-                "Authorization": token
+                "Authorization": AUTH_TOKEN
             }
         });
         return client.post("initialize",{body: data})

@@ -9,10 +9,10 @@ const getResponseBody = res => res.body
 const throwError = err => {throw err.body}
 
 
-const payment = (token = required('token') ) => {
+const payment = ({AUTH_TOKEN = required('Authentication token'), BASE_URL = required ('Base url')} ) => {
     return Object.create({
         checkout: ( paymentDetails = required ('payment details')) =>pipe(
-            initialize(token),
+            initialize({AUTH_TOKEN, BASE_URL}),
             getResponseBody
         )(paymentDetails).catch(throwError)
     })
