@@ -91,7 +91,6 @@ payment({ AUTH_TOKEN, BASE_URL })
   .catch(err => console.log(err))
 
 
-
 `Result`
 
 { amount: 1,
