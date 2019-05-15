@@ -5,4 +5,3 @@ const required = str => {
 }
 
 module.exports = required
-
