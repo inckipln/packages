@@ -18,8 +18,7 @@ This section shows how to create a checkout page with asoriba's payment api
 | PAYMENT DETAILS      |  Contains the details of the payment or order  |  true        |  object  |
 
 
-### Run
-#### Initialize Payment / Checkout 
+## Initialize Payment / Checkout 
 
 ``` javascript
 const payment = require ('asoriba-payment')
@@ -73,9 +72,7 @@ Once payment has been made, you can go ahead and verify the status of the paymen
 
 
 
-### Run
-
-#### Verification
+## Verification
 
 ```javascript
 
